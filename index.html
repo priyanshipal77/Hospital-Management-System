@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏥 Hospital Management System</h1>
+</header>
+
+<div class="container">
+
+    <!-- Login -->
+    <div class="login" id="loginBox">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard">
+
+        <nav>
+            <button onclick="show('doctor')">Doctor</button>
+            <button onclick="show('patient')">Patient</button>
+            <button onclick="show('appointment')">Appointment</button>
+            <button onclick="show('billing')">Billing</button>
+        </nav>
+
+        <!-- Doctor -->
+        <div id="doctor" class="card">
+            <h2>Add Doctor</h2>
+            <input id="docId" placeholder="ID">
+            <input id="docName" placeholder="Name">
+            <input id="docSpec" placeholder="Specialization">
+            <button onclick="addDoctor()">Add</button>
+            <ul id="doctorList"></ul>
+        </div>
+
+        <!-- Patient -->
+        <div id="patient" class="card">
+            <h2>Add Patient</h2>
+            <input id="patId" placeholder="ID">
+            <input id="patName" placeholder="Name">
+            <input id="patAge" placeholder="Age">
+            <button onclick="addPatient()">Add</button>
+            <ul id="patientList"></ul>
+        </div>
+
+        <!-- Appointment -->
+        <div id="appointment" class="card">
+            <h2>Appointment</h2>
+            <input id="appPid" placeholder="Patient ID">
+            <input id="appDid" placeholder="Doctor ID">
+            <button onclick="bookAppointment()">Book</button>
+            <ul id="appointmentList"></ul>
+        </div>
+
+        <!-- Billing -->
+        <div id="billing" class="card">
+            <h2>Billing</h2>
+            <input id="billPid" placeholder="Patient ID">
+            <input id="consult" placeholder="Consult Fee">
+            <input id="med" placeholder="Medicine">
+            <input id="test" placeholder="Test">
+            <button onclick="generateBill()">Generate</button>
+            <ul id="billList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
