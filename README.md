@@ -9,6 +9,7 @@ The project is mainly built for academic learning, focusing on programming conce
 C Programming – Core logic and system functionality
 HTML, CSS, JavaScript – Basic frontend interface
 Platform: Windows
+
 📂 Project Structure
 hospital-management/
 │── hospital.c        # Core C program
@@ -45,12 +46,14 @@ gcc hospital.c -o hospital
 ./hospital
 Run Frontend:
 Open index.html in any browser
+
 🚀 Future Improvements
 Connect frontend with backend logic
 Implement file-based data storage
 Add secure login system
 Improve UI/UX
 Upgrade to database-driven system
+
 👥 Team
 Palak Shankar (Team Leader)
 Priyanshi Pal
